@@ -1,0 +1,26 @@
+---
+title: "genome"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ade4)
+library(made4)
+library(scatterplot3d)
+data(khan)
+```
+
+```{r}
+names(khan)
+summary(khan)
+```
+
+```{r}
+overview(khan$train, labels = khan$train.classes)
+overview(khan$train, classvec=khan$train.classes, labels = khan$train.classes)
+```
+
